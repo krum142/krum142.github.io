@@ -3,6 +3,7 @@ import { showInfo } from '../notifications.js';
 
 export default async function logout(){
     await apiLogout();
-    showInfo("Successful logout")
     this.redirect("#/home");
+    showInfo("Successful logout")
+
 }
