@@ -100,11 +100,12 @@ export default class API {
             login: username,
             password 
         });
-
+        if(result.hasOwnProperty("errorData")){
+            throw new Error("Login Failed");
+        }
         localStorage.setItem('userToken', result['user-token']);
         localStorage.setItem('email', result.email);
         localStorage.setItem('ownerId', result.ownerId);
-
         return result;
     }
 
