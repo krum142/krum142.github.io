@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="../static/favicon.ico">
+  <link href="../static/css/site.css" type="text/css" rel="stylesheet">
+  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css" />
+
+  <title>Application 2020</title>
+
+  <!-- Modules -->
+  <script src="/nodemodules/jquery/dist/jquery.js"></script>
+  <script src="/nodemodules/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="/nodemodules/handlebars/dist/handlebars.js"></script>
+  <script src="/nodemodules/sammy/lib/sammy.js"></script>
+  <script src="/nodemodules/sammy/lib/plugins/sammy.handlebars.js"></script>
+
+  <!-- Scripts  -->
+  <script src="./js/app.js" type="module"></script>
+</head>
+
+<body>
+  <!-- <div id="notifications" style="position:absolute; margin-top:100px;">
+    <div id="loadingBox" style="display: none" class="alert alert-dark">
+        <span>Loading …</span>
+    </div>
+    <div id="infoBox" style="display:none" class="alert alert-primary">
+        <span>Info</span>
+    </div>
+    <div id="errorBox" style="display:none" class="alert alert-danger">
+        <span >Error</span>
+    </div>
+  </div> -->
+
+  <section class="notifications" style="display: none;">
+    <p class="notification-message" id="errorBox"></p>
+  </section>
+  <section class="notifications" style="display: none;background-color:rgba(1, 131, 29, 0.541);">
+    <p class="notification-message" id="successBox"></p>
+  </section>
+
+  <div id="root">
+    
+  </div>
+</body>
+
+</html>
